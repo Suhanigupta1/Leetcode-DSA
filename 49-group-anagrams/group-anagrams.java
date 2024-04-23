@@ -3,6 +3,7 @@ class Solution {
         if(strs==null && strs.length==0){
             return new ArrayList<>();
         }
+        Arrays.sort(strs);
         HashMap<String, ArrayList<String>> ans = new HashMap<>();
         for(String str: strs){
             int[] ch = new int[26];
