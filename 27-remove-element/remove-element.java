@@ -6,12 +6,10 @@ class Solution {
                 temp.add(nums[i]);
             }
         }
-        Collections.sort(temp);
+        // Collections.sort(temp);
         for(int i=0; i<nums.length; i++){
             if(i<temp.size()){
                 nums[i] = temp.get(i);
-            }else{
-                nums[i] = -1;
             }
         }
         return temp.size();
